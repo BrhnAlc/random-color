@@ -11,7 +11,7 @@ function randomHex(){
 }
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundColor:`${hex}`}}>
      <h1>{hex}</h1>
      <button onClick={randomHex}>click for new Background</button> <hr />
      <button onClick={()=>navigator.clipboard.writeText(hex)}>copy the hex value</button>
